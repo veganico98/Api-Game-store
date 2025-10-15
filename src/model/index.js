@@ -5,10 +5,12 @@ import Publisher from "./publisher/Publisher.js"
 Game.hasMany(Publisher, {
     foreignKey:{
         name: "publisherId",
+        onDelete: "CASCADE",
+        onUpdate: "CASCADE"
     }
 })
 
-sequelize.afterSync({
+sequelize.sync({
     force: false,
     alter: true
 }).then(() => {

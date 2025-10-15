@@ -1,4 +1,4 @@
-import Game from "../../model/game/Game"
+import Game from "../../model/game/Game.js"
 
 const destroy = async (id) => {
     const game = await Game.destroy({

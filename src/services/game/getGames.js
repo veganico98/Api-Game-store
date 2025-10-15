@@ -1,5 +1,5 @@
-import Game from "../../model/game/Game"
-import Publisher from "../../model/publisher/Publisher"
+import Game from "../../model/game/Game.js"
+import Publisher from "../../model/publisher/Publisher.js"
 
 const getAll = async () => {
     const games = await Game.findAll({

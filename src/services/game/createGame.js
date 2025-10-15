@@ -1,4 +1,4 @@
-import model from "../../model"
+import model from "../../model/index.js"
 
 const createAGame = async (game) => {
     try{

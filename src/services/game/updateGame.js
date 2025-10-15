@@ -1,6 +1,6 @@
-import Game from "../../model/game/Game"
+import Game from "../../model/game/Game.js"
 
-const updateGame = async (data, id) => {
+const updateAGame = async (data, id) => {
     const qtd = await Game.updateGame(data, {
         where: {
             id
@@ -15,3 +15,5 @@ const updateGame = async (data, id) => {
 
     return game
 }
+
+export default updateAGame

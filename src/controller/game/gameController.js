@@ -1,9 +1,9 @@
-import express from 'express'
 import getOne from "../../services/game/getGame.js"
 import getAll from "../../services/game/getGames.js"
 import destroy from '../../services/game/destroyGame.js';
 import createAGame from '../../services/game/createGame.js';
 import update from "../../services/game/updateGame.js"
+import createByList from "../../services/publisher/createPublisher.js";
 
 const getGame = async(req, res) => {
     try{
