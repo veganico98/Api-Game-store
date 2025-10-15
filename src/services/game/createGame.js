@@ -1,6 +1,6 @@
 import model from "../../model"
 
-const createGame = async (game) => {
+const createAGame = async (game) => {
     try{
         const create = await model.Game.create({
             name: game.name,
@@ -18,4 +18,4 @@ const createGame = async (game) => {
     }
 }
 
-export default createGame
+export default createAGame
