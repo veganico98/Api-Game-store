@@ -13,6 +13,6 @@ routerGame.post("/game",auth, gameController.createGame)
 
 routerGame.delete("/game/:id",auth, gameController.destroyGame)
 
-routerGame.patch("/actor/:id",auth, gameController.updateGame)
+routerGame.patch("/game/:id",auth, gameController.updateGame)
 
 export default routerGame
